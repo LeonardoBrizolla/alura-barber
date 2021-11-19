@@ -4,7 +4,7 @@ header {
 }
 
 .caixa {
-  width: 940px;
+  width: 1020px;
   position: relative;
   margin: 0 auto;
 }
@@ -26,4 +26,38 @@ nav a {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 22px;
+}
+
+.produtos {
+  width: 1020px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.produtos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.produto-descricao {
+  font-size: 18px;
+}
+
+.produto-preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
 }
