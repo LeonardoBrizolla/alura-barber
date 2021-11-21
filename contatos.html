@@ -10,7 +10,7 @@
     <header>
       <div class="caixa">
         <h1>
-          <img src="assets/logo.png" alt="Logo Alura Barber" />
+          <img src="assets/logo.png" alt="Logo da Alura Barber" />
         </h1>
 
         <nav>
@@ -26,13 +26,25 @@
     <main>
       <form>
         <label for="nomesobrenome">Nome e Sobrenome</label>
-        <input type="text" id="nomesobrenome" class="input-for-text" />
+        <input type="text" id="nomesobrenome" class="input-for-text" required />
 
         <label for="email">E-mail</label>
-        <input type="text" id="email" class="input-for-text" />
+        <input
+          type="email"
+          id="email"
+          class="input-for-text"
+          required
+          placeholder="sueemail@dominio.com"
+        />
 
         <label for="telefone">Telefone</label>
-        <input type="text" id="telefone" class="input-for-text" />
+        <input
+          type="tel"
+          id="telefone"
+          class="input-for-text"
+          required
+          placeholder="(XX) XXXXX-XXXX"
+        />
 
         <label for="mensagem">Mensagem</label>
         <textarea
@@ -40,10 +52,11 @@
           rows="10"
           id="mensagem"
           class="input-for-text"
+          required
         ></textarea>
 
-        <div>
-          <p>Como prefere o nosso contato?</p>
+        <filedset>
+          <legend>Como prefere o nosso contato?</legend>
           <label for="radio-email">
             <input
               type="radio"
@@ -70,22 +83,23 @@
               value="whatsapp"
               id="radio-whatsapp"
               name="contatos"
+              checked
             />
             Whatsapp
           </label>
-        </div>
+        </filedset>
 
-        <div>
-          <p>Qual horário prefere ser atendido</p>
+        <filedset>
+          <legend>Qual horário prefere ser atendido</legend>
           <select>
             <option>Manhã</option>
             <option>Tarde</option>
             <option>Noite</option>
           </select>
-        </div>
+        </filedset>
 
         <label>
-          <input type="checkbox" class="checkbox-news" />
+          <input type="checkbox" class="checkbox-news" checked />
           Gostaria de receber nossas novidades por e-mail?
         </label>
 
@@ -94,7 +108,7 @@
     </main>
 
     <footer>
-      <img src="assets/logo-branco.png" alt="Alura Barber" />
+      <img src="assets/logo-branco.png" alt="Logo da Alura Barber" />
       <p class="copyright">
         &copy; Copyright Alura Barber by Leonardo Brizolla 💟
       </p>
