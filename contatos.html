@@ -5,7 +5,6 @@
     <title>Contatos - AluraBarber</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style-home.css" />
   </head>
   <body>
     <header>
@@ -24,7 +23,59 @@
       </div>
     </header>
 
-    <main>teste</main>
+    <main>
+      <form>
+        <label for="nomesobrenome">Nome e Sobrenome</label>
+        <input type="text" id="nomesobrenome" class="input-for-text" />
+
+        <label for="email">E-mail</label>
+        <input type="text" id="email" class="input-for-text" />
+
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" class="input-for-text" />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea
+          cols="70"
+          rows="10"
+          id="mensagem"
+          class="input-for-text"
+        ></textarea>
+
+        <p>Como prefere o nosso contato?</p>
+        <label for="radio-email">
+          <input type="radio" value="email" id="radio-email" name="contatos" />
+          Email
+        </label>
+
+        <label for="radio-telefone">
+          <input
+            type="radio"
+            value="telefone"
+            id="radio-telefone"
+            name="contatos"
+          />
+          Telefone
+        </label>
+
+        <label for="radio-whatsapp">
+          <input
+            type="radio"
+            value="whatsapp"
+            id="radio-whatsapp"
+            name="contatos"
+          />
+          Whatsapp
+        </label>
+
+        <label>
+          <input type="checkbox" class="checkbox-news" />
+          Gostaria de receber nossas novidades por e-mail?
+        </label>
+
+        <input type="submit" value="Enviar formulário" />
+      </form>
+    </main>
 
     <footer>
       <img src="assets/logo-branco.png" alt="Alura Barber" />

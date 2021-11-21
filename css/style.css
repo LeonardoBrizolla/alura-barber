@@ -36,7 +36,8 @@ nav a:hover {
 }
 
 main {
-  background: #6272a4;
+  width: 1020px;
+  margin: 0 auto;
 }
 
 .produtos {
@@ -98,4 +99,26 @@ footer {
 .copyright {
   color: #fff;
   font-size: 13px;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label,
+form p {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.input-for-text {
+  display: block;
+  margin: 0 0 20px;
+  width: 50%;
+  padding: 10px 25px;
+}
+
+.checkbox-news {
+  margin: 20px 0;
 }
